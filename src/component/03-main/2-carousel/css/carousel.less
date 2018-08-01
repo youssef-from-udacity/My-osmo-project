@@ -1,0 +1,118 @@
+.carousel{
+    width: 100%;
+    position: absolute;
+    left:0;
+}
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    *, *:before, *:after {
+ /*CSS transforms*/
+ transform: none !important;
+ /*CSS animations*/
+ animation: none !important;
+ }
+}
+.item {
+    min-height: 320px;
+    min-width: 100%;
+}
+.item__img {
+    height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item__img-1{
+    background-image: url("../img/carousel/062d7ee.6.jpg");
+}
+.item__img-2{
+    background-image: url("../img/carousel/fc91528.11.jpg");
+}
+.item__img-3{
+    background-image: url("../img/carousel/5a9c369.8.jpg");
+}
+.item__img-4{
+    background-image: url("../img/carousel/1a08d30.9.jpg");
+}
+.item__img-5{
+    background-image: url("../img/carousel/7672e35.3.jpg");
+}
+.item__img-6{
+    background-image: url("../img/carousel/aacc1f5.4.jpg");
+}
+.item__img-7{
+    background-image: url("../img/carousel/b34dcc2.1.jpg");
+}
+.item__img-8{
+    background-image: url("../img/carousel/d420e48.10.jpg");
+}
+.item__img-9{
+    background-image: url("../img/carousel/d802fa5.5.jpg");
+}
+.item__img-10{
+    background-image: url("../img/carousel/faf188e.2.jpg");
+}
+.item__img-11{
+    background-image: url("../img/carousel/6095cbc.7.jpg");
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.carousel-fade .active.left {
+        left:0;
+        opacity:0;
+        -webkit-transition: opacity .1s; /*time < to $.carousel.interval setup */
+        -moz-transition: opacity .1s;
+        -ms-transition: opacity .1s;
+        -o-transition: opacity .1s;
+        transition: opacity  .1s;
+        z-index:2;
+
+}
+
+.carousel-fade .next {
+
+    left:0;
+    opacity:1;
+    z-index:1;
+
+}
+
+@media (min-width: 500px) and (max-width: 768px){
+    .item {
+        min-height: 410px;
+    }
+    .item__img {
+    height: 410px;
+    }
+}
+@media (min-width: 768px){
+    .item {
+        min-height: 56vw;
+    }
+    .item__img {
+    height: 56vw;
+    }
+}

@@ -1,0 +1,53 @@
+.homeStrip {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/homeStrip/904e480.ipad-img-masked-sm-horizont-flip.png"), radial-gradient(circle, #94d0f1, #7ac0e9, #5eb1e1, #3ea1da, #0192d2);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 100%;
+}
+.homeStrip__item {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.homeStrip__description {
+    padding: 20px;
+    width: 100%;
+    font-size: 1.2em;
+    color: #FFF;
+    h2 {
+        font-size: 35px;
+    }
+}
+.btn-outline-inverse {
+    width: 125px;
+    color: #fff;
+    background-color: transparent;
+    border-color: #cdbfe3;
+    &:hover {
+            color: #3e68c4;
+            text-shadow: none;
+            background-color: #fff;
+            border-color: #fff;
+            .svg_1 {
+            fill: #3e68c4;
+        }
+    }
+}
+@media (min-width: 680px) {
+        .homeStrip__item {
+        justify-content: flex-end;
+    }
+    .homeStrip__description {
+        width: 50%;
+    }
+    .homeStrip {
+        background-image: url("../img/homeStrip/904e480.ipad-img-masked-sm.png"), radial-gradient(circle, #94d0f1, #7ac0e9, #5eb1e1, #3ea1da, #0192d2);
+        background-position-x: 50%;
+    }
+}

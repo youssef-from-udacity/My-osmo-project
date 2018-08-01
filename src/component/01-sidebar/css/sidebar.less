@@ -1,0 +1,171 @@
+body{
+    min-height: 7050px;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    height: 450px;
+    overflow: scroll;
+    z-index: 999;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #46474a, #363638, #272627, #171617, #000000);
+    color: #fff;
+    padding-top: 50px;
+    transform: translateX(-250px);
+    transition:  transform ease-in .1s;
+}
+
+.sidebar ul.components {
+    padding: 20px 0;
+}
+
+
+.sidebar ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: modum;
+    display: block;
+    text-decoration: none;
+
+
+}
+.sidebar ul li a:hover {
+    color: #fff;
+    background: #46474a;
+}
+
+.sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #46474a;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+.content {
+    padding: 20px 20px 20px 0px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.sidebar.collapse{
+        transform: translateX(0px);
+}
+.sidebarCollapse span {
+    display: none;
+}
+.game-list{
+    height: 0;
+
+    overflow: hidden;
+    transition: all linear .2s;
+    transform: translateY(700px);
+    position: relative;
+}
+.game-list.collapse{
+    height:650px;
+    transform: translateY(0px);
+}
+.list-link{
+    font-size: 1.2em !important;
+    padding-left: 30px !important;
+    background: black;
+    display: flex !important;
+}
+.col-sm-1-10:hover .list-icon{
+    box-shadow: 0 0 4px 4px #FFF;
+}
+.list-icon{
+    background-image: url('./../img/fe85b89.all-games-256.jpg');
+    height: 44px;
+    width: 44px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background-size: 190px 170px;
+    background-position: -50px 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-link:hover .list-icon{
+    box-shadow: 0 0 4px 4px #FFF;
+}
+.list-icon1{
+    background-position: -105px 50px;
+}
+.list-icon2{
+    background-position: 0px 50px;
+}
+.list-icon3{
+    background-position: 0px 0px;
+}
+.list-icon4{
+    background-position: 50px 0px;
+}
+.list-icon5{
+    background-position: 312px 100px;
+}
+.list-icon6{
+    background-position: -50px 0px;
+}
+.list-icon7{
+    background-position: -110px 0px;
+}
+.list-icon8{
+    background-position: 0px 100px;
+}
+.list-icon9{
+    background-position: 50px 100px;
+}
+.list-text{
+    font-size: 1.4em;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: auto;
+    max-width: 169px;
+}
+@media (min-width: 768px){
+    .list-icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        background-size: 210px 160px;
+    }
+    .list-text{
+        margin: 15px -20px 0px;
+        font-size: 1em;
+        color: #fff;
+        letter-spacing: normal;
+        font-weight: 600;
+    }
+
+}

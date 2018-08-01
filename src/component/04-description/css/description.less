@@ -1,0 +1,70 @@
+.osmoContainer{
+    height: 670px;
+    width: 100vw;
+    overflow: hidden;
+}
+@media (min-width: 680px){
+    .osmoContainer{
+        height: 450px;
+    }
+}
+@media (min-width: 680px) and (max-width: 900px){
+    .osmoContainer{
+        height: 50vw
+    }
+}
+.description{
+    background-image: url("../img/description/girl-playing-monster.jpeg");
+    height: 100%;
+    width: 100%;
+    background-position-y: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.description__parent {
+    height: 100%;
+    max-width: 960px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.meetOsmo{
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.description__items{
+        width: 100%;
+        margin: auto 0;
+    }
+.meetOsmo__p{
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.meetOsmo__link {
+    color: #989292;
+    font-size: 19px;
+    margin: 15px;
+    display: inline-block;
+    vertical-align: bottom;
+    letter-spacing: 1.2px;
+    a{
+        color: #989292;
+        margin: 0 10px;
+    }
+}
+@media (min-width: 680px){
+    .description{
+        background-image: url(../img/description/girl-playing-monster2.jpg);
+        background-size: cover;
+        background-position-x: 100%;
+        background-position-y: 0%;
+    }
+    .description__items{
+        width: 47%;
+    }
+
+}
+

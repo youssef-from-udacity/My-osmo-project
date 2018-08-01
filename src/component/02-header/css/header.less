@@ -1,0 +1,230 @@
+.nav-block{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+.navbar-default {
+    background-color: #FFFFFF;
+    width: 100vw;
+}
+.navbar-brand{
+    padding-top: 10px;
+    position: relative;
+    left: ~"calc(50% - 75px)";
+}
+
+.navbar-toggle{
+    margin-right: 0;
+    float: left;
+    padding-left: 14px;
+}
+.navbar-toggle.collapsed {
+    padding-left: 10px;
+}
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.span-child-2 {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.span-child-3 {
+    opacity: 0;
+}
+
+.span-child-4 {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.collapsed .span-child-2,
+.collapsed .span-child-4 {
+    transform: rotate(0);
+}
+
+.collapsed .span-child-3 {
+    opacity: 1;
+}
+
+.nav-img{
+    width: 100px;
+}
+.btn-warning{
+    background-color: #ff920a;
+    &:hover{
+        background-color: #ff920a;
+    }
+}
+.nav-btn{
+    position: relative;
+    left: ~"calc(100% - 50px)";
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transform: scale(1,1);
+    transition: transform .1s;
+    &:hover{
+        transform: scale(1.1,1.1);
+
+    }
+}
+.navbar-nav>li {
+    min-width: 96px;
+    a {
+        font-size: 1.4em;
+        font-weight: bold;
+        line-height: 60px;
+        font-family: modum;
+        &:hover{
+            color: black;
+        }
+    }
+}
+@media (min-width: 768px){
+
+    .navbar-header{
+        float: none;
+    }
+    .navbar-mw{
+        max-width: 960px;
+        margin: auto;
+        display: flex;
+    }
+    .navbar-brand{
+        left: -25px;
+        top: 15px;
+    }
+
+    .nav-img{
+        width: 150px;
+    }
+
+    .nav-main {
+        position: relative;
+        left: ~"calc(50% - 151px)";
+    }
+    .nav-btn{
+        margin-top: 26px;
+        left: ~"calc(100% - 80px)";
+    }
+    .btn-span{
+        &:after{
+            content: " Now";
+        }
+    }
+    .collapse .col-sm-1-10{
+        position: fixed;
+        transform:translateY(137px);
+    }
+    .col-sm-1-10 {
+        position: absolute;
+        display: block;
+        top: -42px;
+        width: 77px;
+        padding: 15px;
+        z-index: 1008;
+        transform:translateY(0);
+    }
+    .col-10{
+        left: 89.2%;
+        transition: transform linear .19s;
+    }
+    .col-9{
+        left: 79.4%;
+        transition: transform linear .18s;
+    }
+    .col-8{
+        left: 69.6%;
+        transition: transform linear .17s;
+    }
+    .col-7{
+        left: 59.8%;
+        transition: transform linear .16s;
+    }
+    .col-6{
+        left: 50%;
+        transition: transform linear .15s;
+    }
+    .col-5{
+        left: 40.2%;
+        transition: transform linear .14s;
+    }
+    .col-4{
+        left: 30.4%;
+        transition: transform linear .13s;
+    }
+    .col-3{
+        left: 20.6%;
+        transition: transform linear .12s;
+    }
+    .col-2{
+        left: 10.8%;
+        transition: transform linear .11s;
+    }
+    .col-1{
+        left: 1%;
+        transition: transform linear .1s;
+    }
+
+    .menu-bar {
+        position: absolute;
+        top: -55px;
+        display: block;
+        height: 145px;
+        width: 100vw;
+        background-color: #1ab9d6;
+        overflow: hidden;
+        z-index: 999;
+        transform:translateY(0);
+        transition: transform linear .1s;
+
+    }
+    div[aria-expanded="true"]+.menu-bar{
+        position: fixed;
+        transform:translateY(145px);
+    }
+    .menu-pad{
+        padding: 15px
+    }
+    .styled-link{
+        text-align: center;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+@media (min-width: 960px){
+    .col-10{
+        left: ~"calc(50% + 388px)";
+    }
+    .col-9{
+        left: ~"calc(50% + 291px)";
+    }
+    .col-8{
+        left: ~"calc(50% + 196px)";
+    }
+    .col-7{
+        left: ~"calc(50% + 97px)";
+    }
+    .col-6{
+        left: 50%;
+    }
+    .col-5{
+        left: ~"calc(50% - 97px)";
+    }
+    .col-4{
+        left: ~"calc(50% - 196px)";
+    }
+    .col-3{
+        left: ~"calc(50% - 291px)";
+    }
+    .col-2{
+        left: ~"calc(50% - 388px)";
+    }
+    .col-1{
+        left: ~"calc(50% - 485px)";
+    }
+}
